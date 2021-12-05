@@ -11,7 +11,7 @@ body {
   }
   
   .navLink {
-      display: inline;
+      display:inline;
   }
   
   .form-items {
@@ -70,6 +70,13 @@ body {
     color: white;
     list-style: none;
     margin:3px;
+  }
+  .item-list{
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+
   }
   
   h2 {
