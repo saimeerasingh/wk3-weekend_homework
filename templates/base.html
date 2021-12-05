@@ -1,0 +1,15 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <title>{{ title }} - Shopping List</title>
+    </head>
+    <body>
+        <ul>
+          <li class ="navLink"><a href="/items">Home</a></li>
+        </ul>
+        <hr>
+        {% block content %}
+        
+        {% endblock %}
+    </body>
+</html>

@@ -11,8 +11,21 @@
      <input type ="number" name="quantity" id="quantity">
      <label for="bought">Bought</label>
      <input type="checkbox" name="bought" id="bought" value="False">
-     
      <input type="submit" value="Add Item">
-
-
     </form>
+
+    <div class="item-container">
+        {% for items in items_list %}
+        <div class="item">
+          <h2>{{ items.name }}</h2>
+          <h3>{{ items.price}}</h3>
+          <h4>{{items.quantity}}</h4>
+         
+              {% if items.bought %}
+              <p><i>bought </i></p>
+              {% endif %}        
+        </div>
+        {% endfor %}
+        </div>
+
+{% endblock %}
