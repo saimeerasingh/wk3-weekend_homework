@@ -17,5 +17,4 @@ def add_item():
     new_item_list = Items(new_item_name,new_item_price,new_item_quantity,new_item_bought)
     add_new_item(new_item_list)
     return redirect ('/items')
-
-@app.route()
+ 
